@@ -2,9 +2,9 @@
   "name": "booksbridge",
   "version": "1.0.0",
   "description": "Remade version of Booksbridge",
-  "main": "index.js",
+  "main": "index.tsx",
   "scripts": {
-    "start": "webpack serve --port 3000",
+    "start": "NODE_ENV=development webpack serve --port 3000",
     "build": "NODE_ENV=production webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
