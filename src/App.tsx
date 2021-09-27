@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 import { ROUTES } from '@booksbridge/shared/routes'
-import Home from '@booksbridge/component/Home'
+import Home from '@booksbridge/components/Home'
 
 const App = () => {
 
