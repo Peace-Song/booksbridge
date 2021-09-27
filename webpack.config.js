@@ -1,8 +1,9 @@
 const prod = process.env.NODE_ENV === 'production';
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const path = require('path')
+const ESLintPlugin = require('eslint-webpack-plugin');
+const path = require('path');
 
-console.log('Build Mode: ', process.env.NODE_ENV || 'unknown')
+console.log('Build Mode: ', process.env.NODE_ENV || 'unknown');
 
 module.exports = {
   mode: prod ? 'production' : 'development',
@@ -29,8 +30,12 @@ module.exports = {
   },
   devtool: prod ? undefined : 'source-map',
   plugins: [
+    new ESLintPlugin({
+      files: ['src/**/*.ts', 'src/**/*.tsx'],
+      formatter: 'codeframe'
+    }),
     new HtmlWebpackPlugin({
       template: 'index.html'
-    })
+    }),
   ]
 };

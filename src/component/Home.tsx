@@ -1,6 +1,6 @@
-import React, { FC } from 'react'
+import React from 'react'
 
-const Home: FC = () => {
+const Home = () => {
 
   return (
     <div>

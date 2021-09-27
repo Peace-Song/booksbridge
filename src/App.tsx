@@ -1,10 +1,10 @@
-import React, { FC } from 'react'
+import React from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 import { ROUTES } from '@booksbridge/shared/routes'
 import Home from '@booksbridge/component/Home'
 
-const App: FC = () => {
+const App = () => {
 
   return (
     <Switch>
