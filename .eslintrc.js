@@ -1,7 +1,8 @@
 module.exports = {
 	'env': {
+		'node': true,
 		'browser': true,
-		'es2021': true
+		'es6': true
 	},
 	'extends': [
 		'eslint:recommended',
@@ -36,5 +37,15 @@ module.exports = {
 		'no-param-reassign': ['error', { 'props': false }],
 		'no-redeclare': 'error',
 		'@typescript-eslint/explicit-module-boundary-types': 'off'
-	}
-}
+	},
+  'overrides': [{
+    'files': ['*.js'],
+    'rules': {
+      'semi': [
+        'error',
+        'always'
+      ],
+      '@typescript-eslint/no-var-requires': 'off'
+    }
+  }]
+};

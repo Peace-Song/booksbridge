@@ -22,7 +22,7 @@ module.exports = {
           extensions: ['.ts', '.tsx', '.js', '.json'],
         },
         use: 'ts-loader',
-      }
+      },
     ]
   },
   devServer: {
