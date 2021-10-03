@@ -38,14 +38,14 @@ module.exports = {
 		'no-redeclare': 'error',
 		'@typescript-eslint/explicit-module-boundary-types': 'off'
 	},
-  'overrides': [{
-    'files': ['*.js'],
-    'rules': {
-      'semi': [
-        'error',
-        'always'
-      ],
-      '@typescript-eslint/no-var-requires': 'off'
-    }
-  }]
+	'overrides': [{
+		'files': ['*.js'],
+		'rules': {
+		'semi': [
+			'error',
+			'always'
+		],
+		'@typescript-eslint/no-var-requires': 'off'
+		}
+	}]
 };
